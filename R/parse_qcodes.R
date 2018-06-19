@@ -33,8 +33,7 @@ parse_qcodes <- function(x, ...){
 
     ### skip this document/row if no qcodes were found
     if( length(splititems) == 1 ){
-      warning(paste("WARNING: No QCODE blocks found in document number ",
-                    as.character(i),"\n", sep=""))
+      warning("WARNING: No QCODE blocks found in document ","\n")
       next()
     }
 
